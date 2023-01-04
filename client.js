@@ -12,10 +12,11 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("you are connected");
+    conn.write('Name: PR');
   });
 
-  conn.on("data", () => {
-    console.log("i am data");
+  conn.on("data", (data) => {
+    console.log(data);
   });
 
   return conn;
