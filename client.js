@@ -13,10 +13,6 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("you are connected");
     conn.write('Name: PR');
-
-    // setInterval(() => {
-    //   conn.write('Move: up');
-    // }, 50);
   });
 
   conn.on("data", (data) => {
