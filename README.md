@@ -8,11 +8,22 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["message from the snek"](#)
-!["screenshot description"](#)
-
+!["message from the snek"](snake-msg.png)
 
 ## Getting Started
 
 - Follow steps inside the snek server repo to run the server side
 - Run the development snake client using the `node play.js` command.
+
+## [input.js](input.js)
+Handles all the logic related to setting up input stream and handling user input.
+
+| Key       | Command                       |
+|----------------------|----------------------------------|
+| `w`       | move up command               |
+| `a`       | move left command             |
+| `s`       | move down command             |
+| `d`       | move right command            |
+| `q`       | message 'Hey, don't give up!' |
+| `c`       | message 'nom nom'             |
+| ctrl + c  | to Quit             |
